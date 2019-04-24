@@ -1,7 +1,23 @@
 <div ng-controller="CargaArticulos">
 	<div class="card-body">
-	  <h5 class="card-title">{{articulo.titulo}}</h5>
-	  <p class="card-text">{{articulo.texto}}</p>
+	  <h5 class="card-title">{{articulo[0].titulo}}</h5>
+	  <p class="card-text">{{articulo[0].texto}}</p>
 	  <a href="#" class="card-link">Ir a la receta</a>
+	</div>
+</div>
+
+<div ng-controller="CargaArticulos">
+	<div class="card-body">
+		<h5 class="card-title">{{articulo[1].titulo}}</h5>
+		<p class="card-text">{{articulo[1].texto}}</p>
+		<a href="#" class="card-link">Ir a la receta</a>
+	</div>
+</div>
+
+<div ng-controller="CargaArticulos">
+	<div class="card-body">
+		<h5 class="card-title">{{articulo[2].titulo}}</h5>
+		<p class="card-text">{{articulo[2].texto}}</p>
+		<a href="#" class="card-link">Ir a la receta</a>
 	</div>
 </div>

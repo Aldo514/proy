@@ -78,11 +78,11 @@
 			  <a class="list-group-item list-group-item-action bg-success text-white text-center">
 			    Fitrar recetas
 			  </a>
-			  <a href="#" class="list-group-item list-group-item-action text-success text-center">Fácil preparación</a>
+			  <label class="list-group-item list-group-item-action text-success text-center"><input type="checkbox" ng-model="showFacil">Fácil preparación</label>
 			  <a href="#" class="list-group-item list-group-item-action text-warning text-center">Media preparación</a>
 			  <a href="#" class="list-group-item list-group-item-action text-danger text-center">Difícil preparacion</a>
 			</div>
-			<div class="card col-12 col-md-10" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>			
+			<div class="card col-12 col-md-10" ng-if="showFacil" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>			
 		</div>
 	</div>
 <!--///cuerpo-->

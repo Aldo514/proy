@@ -70,12 +70,20 @@ app.controller("CargaArticulos", ['$scope', '$log', '$http', function ($scope, $
 
   $http({
     method: 'GET',
-    url: 'json/datos.json'
-  }).then (function exito (response) {
-    $scope.articulo = response.data;
-    console.log($scope.articulo);
+    url: 'json/recetaFacil.json'
+  }).then(function exito(response) {
+    for (let i = response.data.recetas.length; i >= 0; i--) {
+      $scope.articulo[i] = response.data.recetas[i];
+    }
   }, function error (status) {
     alert("Ha fallado la petición. Estado HTTP:" + status);
   });
+  
+  $scope.showFacil = true;
+  var archivoJson = "";
+  
+  if ($scope.showFacil === true) {
+   archivoJson = "json/recetaFacil.json";
+}
 
 }]);
