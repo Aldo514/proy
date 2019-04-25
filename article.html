@@ -72,17 +72,25 @@
 	</div>
 <!--///carousel-->
 <!--cuerpo-->
-	<div class="container mt-4 mb-4">
+	<div class="container mt-4 mb-4" ng-controller="CargaArticulos">
 		<div class="row">
 			<div class="list-group col-12 col-md-2 p-md-0 px-5">
 			  <a class="list-group-item list-group-item-action bg-success text-white text-center">
 			    Fitrar recetas
-			  </a>
-			  <label class="list-group-item list-group-item-action text-success text-center"><input type="checkbox" ng-model="showFacil">Fácil preparación</label>
-			  <a href="#" class="list-group-item list-group-item-action text-warning text-center">Media preparación</a>
-			  <a href="#" class="list-group-item list-group-item-action text-danger text-center">Difícil preparacion</a>
+				</a>
+				<div >
+					<label class="list-group-item list-group-item-action text-success text-center"><input type="radio" ng-model="menu" ng-value="'f'" ng-click="getVal()">Fácil preparación</label>
+			  	<label class="list-group-item list-group-item-action text-warning text-center"><input type="radio" ng-model="menu" ng-value="'m'" ng-click="getVal()">Media preparación</label>
+			  	<label class="list-group-item list-group-item-action text-danger text-center"><input type="radio" ng-model="menu" ng-value="'d'" ng-click="getVal()">Difícil preparacion</label>
+				</div>
+			 
 			</div>
-			<div class="card col-12 col-md-10" ng-if="showFacil" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>			
+			<div ng-switch="menu">
+				<div class="card col-12 col-md-10" ng-switch-when="f" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+				<div class="card col-12 col-md-10" ng-switch-when="m" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+				<div class="card col-12 col-md-10" ng-switch-when="d" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+			</div>
+						
 		</div>
 	</div>
 <!--///cuerpo-->

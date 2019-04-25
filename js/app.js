@@ -50,40 +50,47 @@ app.controller('carrusel', ['$scope', function($scope) {
     },
 
     $scope.art3 = {
-      titulo: "",
-      descripcion: "",
+      titulo: "Productos marinos",
+      descripcion: "Aqui una lista de los que se conservan mejor",
       img: "https://picsum.photos/600/400/?image=995"
     }
   ];
 
 }]);
-
-app.controller("CargaArticulos", ['$scope', '$log', '$http', function ($scope, $log, $http) {
+app.controller("CargaArticulos", ['$scope', '$http', function ($scope, $http) {
   $scope.articulo = {
     titulo: "",
     sub: "",
     texto: "",
     fechaCreacion: new Date()
   }
-
-  $log.debug("Acabamos de crear el $scope");
-
-  $http({
-    method: 'GET',
-    url: 'json/recetaFacil.json'
-  }).then(function exito(response) {
-    for (let i = response.data.recetas.length; i >= 0; i--) {
-      $scope.articulo[i] = response.data.recetas[i];
+  
+  $scope.getVal = function () {
+    var ruta = 'json/recetaFacil.json';
+    console.log($scope.menu);
+    switch ($scope.menu) {
+      case "f":
+        ruta = 'json/recetaFacil.json';
+        break;
+      case "m":
+        ruta = 'json/recetaMedia.json';
+        break;
+      case "d":
+        ruta = 'json/recetaDificil.json';
+        break;
     }
-  }, function error (status) {
-    alert("Ha fallado la petición. Estado HTTP:" + status);
-  });
-  
-  $scope.showFacil = true;
-  var archivoJson = "";
-  
-  if ($scope.showFacil === true) {
-   archivoJson = "json/recetaFacil.json";
-}
 
+    $http({
+      method: 'GET',
+      url: ruta
+    }).then(function exito(response) {
+      for (let i = response.data.recetas.length; i >= 0; i--) {
+        $scope.articulo[i] = response.data.recetas[i];
+      }
+    }, function error (status) {
+      alert("Ha fallado la petición. Estado HTTP:" + status);
+    });
+    
+  }
+  
 }]);
