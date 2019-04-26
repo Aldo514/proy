@@ -74,7 +74,7 @@
 <!--cuerpo-->
 	<div class="container mt-4 mb-4" ng-controller="CargaArticulos">
 		<div class="row">
-			<div class="list-group col-12 col-md-2 p-md-0 px-5">
+			<div class="list-group col-12 col-md-2 p-md-0 px-4">
 			  <a class="list-group-item list-group-item-action bg-success text-white text-center">
 			    Fitrar recetas
 				</a>
@@ -85,10 +85,10 @@
 				</div>
 			 
 			</div>
-			<div ng-switch="menu">
-				<div class="card col-12 col-md-10" ng-switch-when="f" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
-				<div class="card col-12 col-md-10" ng-switch-when="m" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
-				<div class="card col-12 col-md-10" ng-switch-when="d" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+			<div ng-switch="menu" class="col-md-10">
+				<div ng-switch-when="f" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+				<div ng-switch-when="m" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
+				<div ng-switch-when="d" style="border: 0;"><ng-include src="'data/texto1.html'"></ng-include></div>
 			</div>
 						
 		</div>
