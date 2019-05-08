@@ -2,18 +2,18 @@
 	"recetas": [
 		{
 			"titulo": "Ensalada cesár",
-			"sub": "Necesitas una lechuga romana y croûtons (trozos de pan tostado) con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra.",
+			"sub": "Necesitas una lechuga romana y croûtons (trozos de pan tostado) con zumo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra.",
 			"texto": "Al igual que cualquier otra ensalada, es preciso cortar las verduras y mezclarlas. Pero el punto fuerte de esta, esta en la salsa; Ponemos en el vaso de la batidora la yema de huevo, la salsa inglesa o salsa Worcestershire, la mostaza, el zumo de limón, las anchoas y el diente de ajo. Trituramos con la batidora mientras agregamos aceite poco a poco hasta obtener una salsa, con la textura de una mayonesa. Reservamos en el frigorífico"
 		},
 		{
-			"titulo": "Ensalada cesár",
-			"sub": "Necesitas una lechuga romana y croûtons (trozos de pan tostado) con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra.",
-			"texto": "Al igual que cualquier otra ensalada, es preciso cortar las verduras y mezclarlas. Pero el punto fuerte de esta, esta en la salsa; Ponemos en el vaso de la batidora la yema de huevo, la salsa inglesa o salsa Worcestershire, la mostaza, el zumo de limón, las anchoas y el diente de ajo. Trituramos con la batidora mientras agregamos aceite poco a poco hasta obtener una salsa, con la textura de una mayonesa. Reservamos en el frigorífico"
+			"titulo": "Espaguetis a la carbonara",
+			"sub": "Necesitas pasta, nata para cocinar, mantequilla, una cebolla, un diente de ajo, aceite de oliva y dados de jamón o bacon.",
+			"texto": "Primero deberás hervir la pasta mientras que en una sartén se frie el bacon con las cebollas, el ajo y la mantequilla. En un recipiente aparte deberemos mezclar la nata con un huevo (si se desea), salpimentarlo y batrlo todo. Una vez la pasta este escurrida la deberemos mezclar con el bacon y la salsa de nata. Si se desea se puede añadir un poco de oregano a esta mezcla."
 		},
 		{
-			"titulo": "Ensalada cesár",
-			"sub": "Necesitas una lechuga romana y croûtons (trozos de pan tostado) con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra.",
-			"texto": "Al igual que cualquier otra ensalada, es preciso cortar las verduras y mezclarlas. Pero el punto fuerte de esta, esta en la salsa; Ponemos en el vaso de la batidora la yema de huevo, la salsa inglesa o salsa Worcestershire, la mostaza, el zumo de limón, las anchoas y el diente de ajo. Trituramos con la batidora mientras agregamos aceite poco a poco hasta obtener una salsa, con la textura de una mayonesa. Reservamos en el frigorífico"
+			"titulo": "Pollo a la cerveza",
+			"sub": "Necesitas: dos tomates, pollo, dos cebollas, dos dientes de ajo, una lata de cerveza, vinagre y aceite de oliva.",
+			"texto": "Primero cortar las cebollas y los ajos en trocitos, cortar los tomates en gajos y el pollo en piezas. Freir todo en una olla, si se tiene o se quiere, añadir unas rodajas de patatas. Trás 12 min. cocinando a fuego medio añadir la lata de cerveza y esperar hasta que se evapore todo el alcohol. Se puede acompañar también con arroz."
 		}
 	]
 }
